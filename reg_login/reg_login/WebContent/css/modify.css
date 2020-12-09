@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+body{
+    background:rgba(238,238,238,0.5);
+    position:relative;
+    background-color: lightblue;
+}
+
+.input {
+	margin: auto;
+}
+
+.container {
+	max-width: 500px !important;
+	background: white;
+	margin-top: 100px;
+}
+
+.title {
+	 border-bottom: 1px solid #ccc;
+}

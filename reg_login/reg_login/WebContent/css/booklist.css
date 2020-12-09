@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.btn-modify{
+	width: 200px !important;
+}
+
+.td1{
+	padding-top: 20px !important;
+	vertical-align:middle;
+}
+
+.th1{
+	padding-bottom: 20px !important;
+}
+
