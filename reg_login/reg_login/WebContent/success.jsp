@@ -33,10 +33,10 @@
 					<td align="center"><img src="/reg_login/upload/<%= fileName %>"/></td>
 				</tr>
 				<tr>
-					<td align="center">Welcome、<%= user.getNickname() %>！</td>
+					<td align="center">Welcome <%= user.getNickname() %>！</td>
 				</tr>
 				<tr>
-					<td align="center"><form action="list" method="post"><button type="submit">点我跳转</button></form></td>
+					<td align="center"><form action="list" method="post"><button type="submit">システムに入る</button></form></td>
 				</tr>
 			</table>
 

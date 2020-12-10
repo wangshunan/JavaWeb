@@ -21,6 +21,7 @@ import com.imooc.model.BookDataManager;
 public class CreateBook extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("utf-8");
 		String key, value;
 		Map<String, String> map = new HashMap<String,String>();
 		ServletContext context = request.getServletContext();

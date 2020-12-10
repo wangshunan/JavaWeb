@@ -11,9 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.imooc.domain.Book;
 
-/**
- * Servlet implementation class ModifyServlet
- */
 public class ModifyServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -22,7 +19,7 @@ public class ModifyServlet extends HttpServlet {
 		int i = Integer.parseInt(request.getParameter("idx"));
 		Book b = list.get(i);
 		request.setAttribute("modifyBook", b);
-		request.setAttribute("idx", i);
+		request.getSession().setAttribute("idx", i);
 		request.getRequestDispatcher("/bookmodify.jsp").forward(request, response);
 	}
 

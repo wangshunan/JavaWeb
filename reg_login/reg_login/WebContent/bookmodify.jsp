@@ -31,7 +31,7 @@
 				</div>
 				<div class="form-group">
 					<label>発行日</label>
-					<input type="text" class="form-control" name="date" value="${modifyBook.date}">
+					<input type=date class="form-control" name="date" value="${modifyBook.date}">
 				</div>
 				<div class="form-group">
 					<label>値段</label>

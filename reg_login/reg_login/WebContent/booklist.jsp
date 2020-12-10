@@ -22,11 +22,19 @@
 		<script type="text/javascript">
 			function onModify(idx) {
 				document.getElementById(idx).name = "idx";
+				document.table1.action = "./ModifyServlet";
+				document.table1.submit();
+			}
+
+			function onDelete(idx) {
+				document.getElementById(idx).name = "idx";
+				document.table1.action = "./DeleteServlet";
+				document.table1.submit();
 			}
 		</script>
 
 		<h3><font color="red"></font></h3>
-		<form action="./ModifyServlet" method="post">
+		<form action="" method="post" name="table1">
 			<div>
 				<table class="table table-bordered table-hover">
 					<thead>
@@ -58,10 +66,12 @@
 								￥<fmt:formatNumber value="${book.price}" pattern="0,000.00"></fmt:formatNumber>
 							</td>
 							<td class="btn-modify">
-								<button type="submit" class="btn btn-primary mr-4 ml-2" onclick="onModify('${idx.index}')">
+								<button type="button" class="btn btn-primary mr-4 ml-2" onclick="onModify('${idx.index}')">
 									修正
 								</button>
-								<input type="submit" value="削除" class="btn btn-danger"></input>
+								<button type="button" class="btn btn-danger" onclick="onDelete('${idx.index}')">
+									削除
+								</button>
 							</td>
 						</tr>
 					</c:forEach>
