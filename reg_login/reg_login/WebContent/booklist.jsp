@@ -57,7 +57,7 @@
 					<c:forEach items="${applicationScope.booklist}" var="book" varStatus="idx">
 						<tr>
 							<th scope="row" class="td1">${idx.index + 1}</th>
-							<td style="display:none"><input type="text" style="display:none" id="${idx.index}" value="${idx.index}"></td>
+							<td style="display:none"><input type="text" style="display:none" id="${idx.index}" name="" value="${idx.index}"></td>
 							<td class="td1">${book.name}</td>
 							<td class="td1">${book.author}</td>
 							<td class="td1">${book.publisher}</td>
